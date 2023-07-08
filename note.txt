@@ -1,0 +1,140 @@
+react
+-----
+
+
+npx create-react-app appName
+ 
+ npm start
+
+building blocks of react
+------------------------
+
+html
+js
+css
+
+
+
+Diff btw angular and react
+--------------------------
+
+angular                                           | REACT
+--------------------------------------------------|---------------------------- 
+1.framework of js                                 | 1.library of js
+2. uses real DOM                                  |2.uses Virtual DOM
+(small change in dom ,entire portion will Rerun)  | (small change in dom, the changed portin will only re-run)
+                                                  
+
+advantages of react
+------------------
+ 1.react uses virtual DOM - faster                                                  
+ 2.reusable components
+ 3.uses the code javascript XML
+
+ components in react 
+ --------------------
+
+ 1.class based react - statefull component
+ 2.function based react - stateless component
+
+
+ state
+ -----
+ object that is used to store data inside a component in react
+
+ function based is stateless inorder to make it statefull react came up with react hooks, where hook need to make stateless is (useState)
+
+
+useState 
+
+
+props
+-----
+
+to share datas from parent to child component
+
+another method in props are destructuring(using data name instead of props)
+
+
+
+Api call in javascript
+---------------------
+
+
+Ajax
+----
+
+
+-xmlhttp
+-Fetch
+-asynch await
+
+
+first working hook component= useEffect (imported from react)              like  ngOnit in angular
+
+
+
+
+Redirection/routing in react
+-------------------------------
+react-router-dom      :   library used for routing
+
+
+Browser router: wrap the main component inside browser router component
+
+Router:wrap the component which inside the router need redirection
+
+
+Routes: wrap allthe router if we set morethan one component paths
+/
+
+Link     - a component in react used for redirection
+
+useParams - hook in react-router-dom to acess params <Col id='cal' className='me-5 mt-5'>
+           
+
+REDUX
+-----
+
+
+when coupling increases in components the is a chance for props drilling
+
+coupling: data sharing from parent to child
+
+props drilling : at the time data sharing from parent to child if any intermediate component have any errors then the data will stuck THERE
+
+
+Redux - state management technology - we need to reduce coupling  and make all components independent 
+to avoid props drilling 
+
+
+store : A file used to store data in redux , all components can access the data inside store  
+
+
+libraries for redux
+-------------------
+
+-redux
+-react - redux 
+-redux-thunk 
+
+
+command to install libraries = npm i redux react-redux redux-thunk
+
+creare store - method in redux used to create a store
+
+in Redux middleware used to make redux as asynchronous (actualy redux is synchronous so all asynchronous functions inside
+ redux will behave as synchronous)
+
+ thunk - library used to create middleware 
+
+
+
+ Http methods in react
+ -------------------
+   axios - library used to call Api
+
+   useDispatch - hook used to disptch an function in a component
+
+
+   UseSelector - hook used to  access data from component
